@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(10)->create();
 
-        DB::table('teams')->insert(['name' => 'Deutschland', 'gruppe' => 'A' ]); 
+        DB::table('teams')->insert(['name' => 'Deutschland', 'gruppe' => 'A' ]);
+        DB::table('teams')->insert(['name' => 'Italien', 'gruppe' => 'A' ]); 
     }
 }
